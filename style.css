@@ -124,11 +124,12 @@ body {
 
 }
 
+/* Bullets inside the service-card box */
 .service-card ul {
-  list-style-position: outside;
-  padding-left: 1.95rem;  /* increase indent for bullets */
-  margin-left: 0;         /* reset any negative shift */
-  margin-top: 0.5rem;
+  list-style-type: disc;
+  list-style-position: inside;  /* places bullets inside the content box */
+  padding-left: 1rem;           /* indent the text slightly from the card edge */
+  margin: 0.5rem 0 0 0;         /* keep a bit of space above the list */
 }
 
 
