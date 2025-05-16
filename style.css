@@ -124,12 +124,13 @@ body {
 
 }
 
-/* List styling for the General Treatments card */
+/* Adjust General Treatments list spacing */
 .service-card ul {
-  list-style: disc inside;
-  padding-left: 0;
-  margin: 0.5rem 0 0 0;
+  list-style-position: outside;  /* move bullets outside the text box */
+  padding-left: 1.25rem;         /* indent all list items */
+  margin: 0.5rem 0 0 0;          /* keep your existing top margin */
 }
+
 .service-card ul li {
   margin-bottom: 0.25rem;
   color: #555;
