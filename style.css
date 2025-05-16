@@ -202,3 +202,19 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Target exactly bio-assessment.png in the About card */
+.about .card img[src="bio-assessment.png"] {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (min-width: 768px) {
+  .about .card img[src="bio-assessment.png"] {
+    height: 300px;
+  }
+}
