@@ -127,7 +127,7 @@ body {
 }
 
 /* FORCE bullets inside & padded for service cards */
-.services .service-card ul {
+.service-card ul {
   list-style-position: inside !important;
   list-style-type: disc !important;
   padding-left: 2.5rem !important;
@@ -223,4 +223,12 @@ body {
   .about .card img[src="bio-assessment.png"] {
     height: 300px;
   }
+}
+/* FORCE bullets inside & padded for service cards */
+.services .service-card ul {
+  list-style-position: inside !important;
+  list-style-type: disc !important;
+  padding-left: 3rem !important;
+  margin-left: 0 !important;
+  margin-top: 0.5rem !important;
 }
