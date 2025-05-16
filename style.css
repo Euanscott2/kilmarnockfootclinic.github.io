@@ -62,49 +62,85 @@ body {
   transform: scale(1.05);
 }
 
-/* About & Services */
+/* Ensure About & Services split 1-column on mobile, 2-columns on desktop */
 .about-services {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  max-width: 1200px;
-  margin: auto;
+  align-items: start;
   padding: 2rem 1rem;
 }
+@media (min-width: 768px) {
+  .about-services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+/* Tidy up the About card */
 .about .card {
-  position: relative;
-}
-
-.about .card img {
-  width: 100%;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.about .card img {
   display: block;
-}
-
-.about .card-text {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.6);
-  color: white;
   width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+.about .card-text {
   padding: 1rem;
-}
-
-/* Services */
-.services ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.services li {
   background: white;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: center;
+}
+
+/* Services grid sits inside the right-hand column */
+.services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 1.5rem;
+}
+
+/* Style each service card */
+.service-card {
+  background: white;
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Icon size and spacing */
+.service-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.75rem;
+}
+
+/* List styling for the General Treatments card */
+.service-card ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0.5rem 0 0 0;
+}
+.service-card ul li {
+  margin-bottom: 0.25rem;
+  color: #555;
+  text-align: left;
+}
+
+/* Headings and text */
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.service-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
 }
 
 /* Reviews */
