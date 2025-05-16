@@ -124,12 +124,13 @@ body {
 
 }
 
-/* Adjust General Treatments list spacing */
 .service-card ul {
-  list-style-position: outside;  /* move bullets outside the text box */
-  padding-left: 1.25rem;         /* indent all list items */
-  margin: 0.5rem 0 0 0;          /* keep your existing top margin */
+  list-style-position: outside;
+  padding-left: 1.95rem;  /* increase indent for bullets */
+  margin-left: 0;         /* reset any negative shift */
+  margin-top: 0.5rem;
 }
+
 
 .service-card ul li {
   margin-bottom: 0.25rem;
