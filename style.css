@@ -115,9 +115,13 @@ body {
 
 /* Icon size and spacing */
 .service-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.75rem;
+  display: block;            /* treat it as a block so margins work */
+  margin: 0 auto 0.75rem;    /* center + space below */
+  width: 40px !important;    /* force width */
+  height: 40px !important;   /* force height */
+  object-fit: contain;       /* preserve aspect ratio */
+}
+
 }
 
 /* List styling for the General Treatments card */
