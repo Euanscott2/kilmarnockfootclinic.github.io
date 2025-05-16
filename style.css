@@ -228,7 +228,7 @@ body {
 .services .service-card ul {
   list-style-position: inside !important;
   list-style-type: disc !important;
-  padding-left: 1.75rem !important;
+  padding-left: 1.25rem !important;
   margin-left: 0 !important;
   margin-top: 0.5rem !important;
 }
