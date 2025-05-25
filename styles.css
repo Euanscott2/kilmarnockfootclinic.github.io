@@ -92,7 +92,7 @@ body {
 .about .card img {
   display: block;
   width: 100%;
-  height: 300px;        /* fixed desktop height */
+  height: 250px;        /* fixed desktop height */
   object-fit: cover;
 }
 
