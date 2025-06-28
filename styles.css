@@ -200,3 +200,9 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+.site-logo {
+  height: 60px; /* adjust to taste */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
