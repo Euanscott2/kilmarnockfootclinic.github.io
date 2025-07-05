@@ -227,3 +227,12 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.logo-divider-img {
+  width: 180px;
+  height: auto;
+  display: inline-block;
+  max-width: 90%;
+}
+
+
