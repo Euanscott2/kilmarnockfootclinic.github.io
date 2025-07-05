@@ -235,8 +235,8 @@ body {
 }
 
 .section-logo {
-  max-width: 300px;     /* cap the logo size */
-  width: 100%;          /* allow it to shrink on small screens */
+  max-width: 250px;     /* cap the logo size */
+  width: 90%;          /* allow it to shrink on small screens */
   height: auto;         /* keep correct aspect ratio */
   margin: 0 auto;
   display: block;
