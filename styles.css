@@ -228,18 +228,31 @@ body {
   margin: 0 auto;
 }
 
-/* Logo above About & Services section */
-.section-logo {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem 0.5rem;
+/* Logo Divider Section */
+.logo-divider {
+  text-align: center;
+  padding: 2rem 1rem; /* vertical spacing */
 }
 
-.section-logo img {
-  width: 100%;
-  max-width: 550px;
-  height: auto;
+.section-logo {
+  max-width: 300px;     /* cap the logo size */
+  width: 100%;          /* allow it to shrink on small screens */
+  height: auto;         /* keep correct aspect ratio */
+  margin: 0 auto;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: subtle zoom on hover for interactivity */
+.section-logo:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive adjustment for larger screens */
+@media (min-width: 768px) {
+  .section-logo {
+    max-width: 400px;
+  }
 }
 
 
