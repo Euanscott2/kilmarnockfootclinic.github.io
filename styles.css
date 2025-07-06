@@ -228,32 +228,3 @@ body {
   margin: 0 auto;
 }
 
-/* Logo Divider Section */
-.logo-divider {
-  text-align: center;
-  padding: 2rem 1rem; /* vertical spacing */
-}
-
-.section-logo {
-  max-width: 250px;     /* cap the logo size */
-  width: 90%;          /* allow it to shrink on small screens */
-  height: auto;         /* keep correct aspect ratio */
-  margin: 0 auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-/* Optional: subtle zoom on hover for interactivity */
-.section-logo:hover {
-  transform: scale(1.03);
-}
-
-/* Responsive adjustment for larger screens */
-@media (min-width: 768px) {
-  .section-logo {
-    max-width: 400px;
-  }
-}
-
-
-
