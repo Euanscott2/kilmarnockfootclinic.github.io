@@ -228,3 +228,29 @@ body {
   margin: 0 auto;
 }
 
+/* Logo Divider Section */
+.logo-divider {
+  text-align: center;
+  padding: 2rem 1rem; /* vertical spacing between hero and about */
+}
+
+/* Responsive logo image */
+.section-logo {
+  max-width: 300px;    /* reasonable default for mobile */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Scale up on larger screens */
+@media (min-width: 768px) {
+  .section-logo {
+    max-width: 400px;
+  }
+}
+.section-logo {
+  /* Add this inside the existing rules */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
