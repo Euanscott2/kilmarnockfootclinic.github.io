@@ -254,3 +254,27 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+I’ll adjust your service bullet list so it fits comfortably on laptop screens without spilling outside the card. The simplest approach is to make the bullets wrap naturally and align left, with a bit of inner padding so they don’t touch the edges. Here’s the updated CSS you can drop into your `<style>` block to override the existing rules:
+
+```css
+.service-card ul {
+  margin: .25rem 0 0 0;
+  padding-left: 1.5rem; /* more breathing space */
+  list-style-position: outside; /* prevents text cramping */
+  max-width: 100%; /* prevents overflow */
+  word-break: break-word; /* wraps long words */
+}
+
+.service-card ul li {
+  margin-bottom: .25rem;
+  color: var(--muted);
+  text-align: left;
+}
+```
+
+This will:
+- Give each bullet a little more indentation.
+- Move bullet points outside so the text lines up neatly.
+- Force long words to wrap.
+- Keep the list from exceeding the card width on laptops.
+
