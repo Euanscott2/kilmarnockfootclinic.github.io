@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Podiatrist in Kilmarnock | Kilmarnock Foot Clinic</title>
+  <meta name="description" content="Alistair Smith Podiatry in Kilmarnock—expert foot care, online booking & trusted client reviews.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="canonical" href="https://www.kilmarnockfootclinic.co.uk/">
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Kilmarnock Foot Clinic">
+  <meta property="og:description" content="Expert podiatry care in Kilmarnock. Book online and read client reviews.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kilmarnockfootclinic.co.uk/">
+  <meta property="og:image" content="https://www.kilmarnockfootclinic.co.uk/scalpel.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://static.elfsight.com">
+
+  <!-- Preload hero image for faster LCP -->
+  <link rel="preload" as="image" href="scalpel.webp" imagesrcset="scalpel-600.webp 600w, scalpel-1200.webp 1200w, scalpel-1920.webp 1920w" imagesizes="100vw">
+
+  <!-- Inline critical CSS: base, layout, hero, nav, CTA ribbon -->
+  <style>
+    :root{--brand:#044e54;--primary:#007acc;--accent:#005a99;--bg:#e8fbf6;--text:#1f2937;--muted:#4b5563;--facebook:#1877F2;--radius:16px;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--shadow-sm:0 1px 2px rgba(0,0,0,.06);--shadow-md:0 8px 24px rgba(2,32,40,.12);--maxw:1120px}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 var(--space-4)}
+    .section{padding:var(--space-12) 0}
+    h1,h2,h3{color:var(--brand);line-height:1.2;margin:0 0 var(--space-4)}h1{font-size:clamp(2rem,3vw+1rem,3rem);font-weight:800}h2{font-size:clamp(1.25rem,2vw+1rem,2rem);font-weight:700}h3{font-size:1.125rem;font-weight:700}
+    a{color:var(--primary);text-decoration:none}a:hover{text-decoration:underline}
+
+    /* Skip link */
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:var(--space-4);top:var(--space-4);width:auto;height:auto;padding:var(--space-2) var(--space-3);background:#fff;border-radius:8px;box-shadow:var(--shadow-sm)}
+
+    /* Top nav */
+    .site-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid rgba(4,78,84,.08)}
+    .site-nav .inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem}
+    .brand img{width:34px;height:34px;border-radius:8px;box-shadow:var(--shadow-sm)}
+    .brand .title{font-weight:800;color:var(--brand)}
+
+    .btn{display:inline-block;background:var(--primary);color:#fff;padding:.8rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:var(--shadow-md);border:2px solid transparent}
+    .btn:hover{text-decoration:none;filter:brightness(.97)}
+    .btn:focus-visible{outline:none;box-shadow:0 0 0 4px rgba(0,122,204,.35)}
+    .btn.secondary{background:#fff;color:var(--brand);border-color:#e6f5f3}
+
+    /* Hero */
+    .hero{position:relative;min-height:62vh;display:grid;place-items:center;text-align:center;color:#fff;isolation:isolate}
+    .hero-img{position:absolute;inset:0;z-index:-1}
+    .hero-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,58,63,.25) 0%,rgba(3,58,63,.55) 100%);z-index:-1}
+    .hero-text{padding:var(--space-12) var(--space-4)}
+    .hero h1,.hero h2{color:#fff}
+    .hero .actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:var(--space-6)}
+
+    /* Logo divider */
+    .logo-divider{display:grid;place-items:center;padding:var(--space-12) 0}
+    .section-logo{width:clamp(180px,26vw,360px);height:auto;display:block;filter:drop-shadow(var(--shadow-sm))}
+
+    /* Two-column section */
+    .about-services .container{display:grid;gap:var(--space-8);grid-template-columns:1fr}
+    @media (min-width:900px){.about-services .container{grid-template-columns:1.1fr .9fr}}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-md);overflow:hidden}
+    .card img{display:block;width:100%;height:auto}
+    .card-text{padding:var(--space-6)}
+
+    .services-grid{display:grid;grid-template-columns:1fr;gap:var(--space-6)}
+    @media (min-width:700px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+    .service-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-md);padding:var(--space-6)}
+    .service-card p{color:var(--muted)}
+    .service-card ul{margin:.25rem 0 0 0;padding:0 0 0 1.1rem;list-style-position:inside}
+
+    /* Why choose us */
+    .features{display:grid;grid-template-columns:1fr;gap:var(--space-6)}
+    @media (min-width:800px){.features{grid-template-columns:repeat(3,1fr)}}
+    .feature{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-md);padding:var(--space-6)}
+
+    /* CTA band */
+    .cta-band{background:#05343a;color:#e7fbf7}
+    .cta-band .inner{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+
+    /* FAQ */
+    .faq{max-width:900px;margin:0 auto}
+    details{background:#fff;border-radius:12px;box-shadow:var(--shadow-sm);padding:1rem;margin-bottom:.8rem}
+    summary{cursor:pointer;font-weight:700;color:var(--brand);list-style:none}
+    summary::-webkit-details-marker{display:none}
+
+    /* Reviews */
+    .reviews .widget-shell{min-height:360px;background:#f8fffd;border:1px solid #e6f5f3;border-radius:var(--radius);display:grid;place-items:center;color:var(--muted);box-shadow:var(--shadow-sm)}
+
+    /* Contact */
+    .contact .container{display:grid;gap:var(--space-6);grid-template-columns:1fr}
+    @media (min-width:900px){.contact .container{grid-template-columns:.9fr 1.1fr}}
+    .map-container{position:relative}
+    .map-container iframe{border:0;width:100%;height:320px;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+    .map-overlay{position:absolute;right:12px;bottom:12px;background:rgba(255,255,255,.9);padding:.4rem .6rem;border-radius:8px;font-size:.9rem;color:var(--text)}
+
+    /* Footer */
+    .footer{background:#062f33;color:#cfeeed;padding:var(--space-8) var(--space-4);margin-top:var(--space-12)}
+    .footer a{color:#cfeeed}
+
+    /* Mobile sticky CTA */
+    .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fffffff2;border-top:1px solid #e6f5f3;backdrop-filter:saturate(180%) blur(6px);padding:.6rem}
+    .mobile-cta .inner{display:flex;gap:.6rem;align-items:center;justify-content:center}
+    @media (min-width:700px){.mobile-cta{display:none}}
+  </style>
+
+  <!-- Main stylesheet (non-critical) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Podiatrist",
+    "name": "Kilmarnock Foot Clinic",
+    "image": "https://www.kilmarnockfootclinic.co.uk/scalpel.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "78 John Finnie Street",
+      "addressLocality": "Kilmarnock",
+      "addressRegion": "Scotland",
+      "postalCode": "KA1 1BS"
+    },
+    "telephone": "07760 665440",
+    "url": "https://www.kilmarnockfootclinic.co.uk",
+    "priceRange": "££",
+    "sameAs": ["https://www.facebook.com/profile.php?id=61576055727402"]
+  }
+  </script>
+
+  <!-- FAQPage Schema (matches details below) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Do I need a referral?","acceptedAnswer":{"@type":"Answer","text":"No referral is required. You can book directly online or by phone."}},
+      {"@type":"Question","name":"What should I bring to my appointment?","acceptedAnswer":{"@type":"Answer","text":"Any previous orthotics, footwear you use most, and a list of medications if relevant."}},
+      {"@type":"Question","name":"Do you offer custom orthotics?","acceptedAnswer":{"@type":"Answer","text":"Yes. After a biomechanical assessment we can advise on general or bespoke devices."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top navigation -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container inner">
+      <a class="brand" href="#top">
+        <img src="logo.png" alt="Kilmarnock Foot Clinic">
+        <span class="title">Kilmarnock Foot Clinic</span>
+      </a>
+      <div>
+        <a class="btn" href="https://clientportal.uk.zandahealth.com/clientportal/kilmarnockfootclinic" target="_blank" rel="noopener">Book now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <div class="hero-img" aria-hidden="true">
+      <picture>
+        <source srcset="scalpel.webp" type="image/webp">
+        <img src="scalpel.png" alt="" decoding="async">
+      </picture>
+    </div>
+    <div class="hero-text">
+      <h1>Expert Podiatry Care in Kilmarnock</h1>
+      <p class="max-w-prose" style="margin:0 auto; color:#e7fbf7">General treatments, biomechanical assessments, and orthotics tailored to you.</p>
+      <div class="actions">
+        <a href="https://clientportal.uk.zandahealth.com/clientportal/kilmarnockfootclinic" class="btn" target="_blank" rel="noopener">Book online</a>
+        <a href="#contact" class="btn secondary">Call us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Logo Divider (Centered & Responsive) -->
+  <div class="logo-divider" aria-label="Clinic logo">
+    <img src="Banner2.jpg" alt="Kilmarnock Foot Clinic logo" class="section-logo" loading="lazy" decoding="async">
+  </div>
+
+  <main id="main">
+    <!-- Why choose us (trust features) -->
+    <section class="section" aria-label="Why choose us">
+      <div class="container">
+        <h2>Why choose us</h2>
+        <div class="features">
+          <div class="feature"><h3>Qualified, caring team</h3><p>Evidence-based care delivered with a friendly, patient-first approach.</p></div>
+          <div class="feature"><h3>Convenient booking</h3><p>Simple online booking with reminders. Evening appointments available.</p></div>
+          <div class="feature"><h3>Orthotics expertise</h3><p>From off‑the‑shelf to fully bespoke devices, fitted to your needs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Services -->
+    <section class="section about-services" aria-label="About and services">
+      <div class="container">
+        <!-- About Column -->
+        <div class="about">
+          <h2>About Us</h2>
+          <div class="card">
+            <img src="bio-assessment.png" alt="Podiatrist performing a biomechanical foot assessment" loading="lazy" decoding="async">
+            <div class="card-text">
+              <p>Alistair Smith is a fully qualified podiatrist with over 10 years of experience helping clients with foot and ankle issues.</p>
+              <p><a class="btn secondary" href="https://clientportal.uk.zandahealth.com/clientportal/kilmarnockfootclinic" target="_blank" rel="noopener">Book an appointment</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Column -->
+        <div class="services">
+          <h2>Our Services</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>General Treatments</h3>
+              <ul>
+                <li>Nail cutting</li>
+                <li>Thick toenail treatment</li>
+                <li>Ingrown toenail treatment</li>
+                <li>Callous (hard skin) reduction</li>
+                <li>Corn removal</li>
+                <li>Verruca treatment</li>
+              </ul>
+            </div>
+            <div class="service-card">
+              <h3>Biomechanical Assessments</h3>
+              <p>Comprehensive gait and foot‑function analysis to identify underlying causes of pain and discomfort.</p>
+            </div>
+            <div class="service-card">
+              <h3>General Orthotics</h3>
+              <p>Pre‑fabricated orthotic inserts designed to provide support and alleviate common foot conditions.</p>
+            </div>
+            <div class="service-card">
+              <h3>Custom &amp; Bespoke Orthotics</h3>
+              <p>Individually crafted orthotic devices tailored to your unique foot anatomy and biomechanical needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section id="reviews" class="section reviews" aria-label="Client reviews">
+      <div class="container">
+        <h2>Client Reviews</h2>
+        <div class="widget-shell">
+          <div class="elfsight-app-589fee85-d778-4ee0-b7ec-32909591a76a" data-elfsight-app-lazy></div>
+          <noscript>Please enable JavaScript to view the reviews.</noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-label="Frequently asked questions">
+      <div class="container faq">
+        <h2>FAQs</h2>
+        <details>
+          <summary>Do I need a referral?</summary>
+          <p>No referral is required. You can book directly online or by phone.</p>
+        </details>
+        <details>
+          <summary>What should I bring to my appointment?</summary>
+          <p>Any previous orthotics, footwear you use most, and a list of medications if relevant.</p>
+        </details>
+        <details>
+          <summary>Do you offer custom orthotics?</summary>
+          <p>Yes. After a biomechanical assessment we can advise on general or bespoke devices.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-label="Contact and location">
+      <div class="container">
+        <div class="contact-info">
+          <h2>Contact &amp; Location</h2>
+          <p><strong>Address:</strong> 78 John Finnie Street, Kilmarnock KA1 1BS</p>
+          <p><strong>Phone:</strong> <a href="tel:07760665440">07760 665440</a></p>
+          <p><strong>Email:</strong> <a href="mailto:alistair@kilmarnockfootclinic.co.uk">alistair@kilmarnockfootclinic.co.uk</a></p>
+        </div>
+        <div class="map-container">
+          <iframe title="Map to Kilmarnock Foot Clinic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.5785551735817!2d-4.501820623889751!3d55.60934810303221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488832eb4f1896c1%3A0x9e7a38a4bf0f2eca!2s78%20John%20Finnie%20St%2C%20Kilmarnock%20KA1%201BS!5e0!3m2!1sen!2suk!4v1747490456753!5m2!1sen!2suk" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="map-overlay"><p>Open Mon–Fri: 9am–5pm</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="section cta-band" aria-label="Book an appointment">
+      <div class="container inner">
+        <h2 style="color:#e7fbf7; margin:0">Ready to feel better on your feet?</h2>
+        <div style="display:flex; gap:.6rem; flex-wrap:wrap">
+          <a class="btn" href="https://clientportal.uk.zandahealth.com/clientportal/kilmarnockfootclinic" target="_blank" rel="noopener">Book online</a>
+          <a class="btn secondary" href="tel:07760665440">Call 07760 665440</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+      <p style="margin:0">&copy; 2025 Kilmarnock Foot Clinic. <a href="privacy-policy.html">Privacy Policy</a></p>
+      <a href="https://www.facebook.com/profile.php?id=61576055727402" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="#1877F2" d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.676V1.325C24 .6 23.4 0 22.675 0z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta" role="region" aria-label="Quick booking">
+    <div class="inner">
+      <a class="btn" href="https://clientportal.uk.zandahealth.com/clientportal/kilmarnockfootclinic" target="_blank" rel="noopener">Book now</a>
+      <a class="btn secondary" href="tel:07760665440">Call</a>
+    </div>
+  </div>
+
+  <!-- Defer Elfsight -->
+  <script>
+    window.addEventListener('load', function(){
+      var s=document.createElement('script');
+      s.src='https://static.elfsight.com/platform/platform.js';
+      s.defer=true; s.async=true; document.body.appendChild(s);
+    });
+  </script>
+</body>
+</html>
 
